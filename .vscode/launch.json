@@ -1,0 +1,18 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug",
+			"type": "lldb",
+			"request": "launch",
+			// Resolved by CMake Tools:
+			"program": "${command:cmake.launchTargetPath}",
+			"args": [],
+			"terminal": "integrated",
+			"cwd": "${workspaceFolder}",
+			"initCommands": [
+				"type synthetic add --regex '^vector<.+>(( )?&)?$' --python-class lldb.formatters.cpp.gnu_libstdcpp.StdVectorSynthProvider -C true"
+			]
+		}
+	]
+}

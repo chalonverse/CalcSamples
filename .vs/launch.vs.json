@@ -1,0 +1,26 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "calc.exe (calc\\Debug\\calc.exe)",
+      "name": "calc.exe (calc\\Debug\\calc.exe)",
+      "currentDir": "${workspaceRoot}/calc",
+      "args": [
+        "test.txt"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "calc2.exe (calc2\\Debug\\calc2.exe)",
+      "name": "calc2.exe (calc2\\Debug\\calc2.exe)",
+      "currentDir": "${workspaceRoot}/calc2",
+      "args": [
+        "test.txt"
+      ]
+    }
+  ]
+}
